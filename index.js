@@ -10,11 +10,13 @@ function some(regs, str) {
 }
 
 
-function domJsxPlugin(options = {
-  pragma: 'h',
-  include: [/.\.tsx$/],
-}) {
+function domJsxPlugin(options = {}) {
   let needSourceMap = true
+  options = Object.assign({}, {
+    pragma: 'h',
+    include: [/.\.tsx$/],
+    importCode: `import {h} from 'tsx-dom';\n`
+  }, options)
 
   return {
     name: 'vue-jsx',
@@ -62,7 +64,7 @@ function domJsxPlugin(options = {
         })
 
         return {
-          code: result.code,
+          code: importCode + result.code,
           map: result.map
         }
       }
