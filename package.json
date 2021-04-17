@@ -1,0 +1,18 @@
+{
+  "name": "vite-plugin-dom-jsx",
+  "version": "0.0.1",
+  "description": "a vite plugin which support tsx-dom library",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "author": "Perry Huang",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NewBuilding/vite-plugin-dom-jsx.git"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.15",
+    "@babel/plugin-transform-react-jsx": "^7.13.12",
+    "@babel/plugin-transform-typescript": "^7.13.0"
+  }
+}
