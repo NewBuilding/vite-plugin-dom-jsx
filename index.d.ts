@@ -1,5 +1,5 @@
-import { Plugin } from 'vite'
+import type{ Plugin } from 'vite'
 
-declare function createPlugin(options?: {pragma: string, include: RegExp[], importCode: string}): Plugin
+declare function createPlugin(options?: {pragma?: string, include?: RegExp[]}): Plugin
 
 export default createPlugin

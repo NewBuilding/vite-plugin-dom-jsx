@@ -15,7 +15,6 @@ function domJsxPlugin(options = {}) {
   options = Object.assign({}, {
     pragma: 'h',
     include: [/.\.tsx$/],
-    importCode: `import {h} from 'tsx-dom';\n`
   }, options)
 
   return {
@@ -64,7 +63,7 @@ function domJsxPlugin(options = {}) {
         })
 
         return {
-          code: importCode + result.code,
+          code: result.code,
           map: result.map
         }
       }
