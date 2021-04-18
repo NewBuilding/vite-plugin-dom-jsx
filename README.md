@@ -1,5 +1,5 @@
 # vite-plugin-dom-jsx 
-Provides [ts-dom](https://github.com/Lusito/tsx-dom) support with vite.
+Provides [dom-jsx](https://github.com/NewBuilding/dom-jsx) support with vite.
 
 ```js
 // vite.config.js
